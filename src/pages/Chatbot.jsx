@@ -26,11 +26,15 @@ export default function Chatbot() {
 
           <div className="border-t p-4 flex gap-3">
 
-            <select className="border p-2 rounded">
-              <option>English</option>
-              <option>Hindi</option>
-            </select>
-
+           <select className="border p-2 rounded">
+  <option value="English">English</option>
+  <option value="Hindi">Hindi</option>
+  <option value="Garhwali">Garhwali</option>
+  <option value="Kumaoni">Kumaoni</option>
+  <option value="Jaunsari">Jaunsari</option>
+  <option value="Rangkas">Rangkas</option>
+  <option value="Bhotiya">Bhotiya</option>
+</select>
             <input
               className="flex-1 border rounded p-3"
               placeholder="Ask anything..."
