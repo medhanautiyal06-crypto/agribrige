@@ -40,19 +40,7 @@ export default function Recommendation() {
 
         <div className="mt-8 bg-white p-6 rounded-xl shadow">
 
-          <h2 className="font-bold text-xl mb-4">
-            Recommendation Result
-          </h2>
-
-          <p>Recommended Crop: Wheat</p>
-
-          <p className="mt-2">
-            Tip: Use organic fertilizers.
-          </p>
-
-          <p className="mt-2 text-red-500">
-            Warning: Avoid overwatering.
-          </p>
+        
 
         </div>
       </div>
