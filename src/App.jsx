@@ -11,6 +11,7 @@ import Dashboard from "./pages/Dashboard";
 import DiseaseDetection from "./pages/DiseaseDetection";
 import Chatbot from "./pages/Chatbot";
 import Recommendation from "./pages/Recommendation";
+import ComponentDemo from "./pages/ComponentDemo";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         <Route path="/disease-detection" element={<DiseaseDetection />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/recommendation" element={<Recommendation />} />
+
+        {/* Week 3 Component Library Demo */}
+        <Route path="/components" element={<ComponentDemo />} />
       </Routes>
 
       <Footer />
