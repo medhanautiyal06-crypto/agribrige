@@ -12,15 +12,15 @@ export default function Hero() {
           transition={{duration:1}}
           className="text-5xl md:text-7xl font-bold leading-tight"
         >
-          Empowering Farmers With
+          Bridging Farmers with 
           <span className="text-green-600">
-            {" "}AI Intelligence
+            {" "}Smart Agriculture
           </span>
         </motion.h1>
 
         <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-          Diagnose crop diseases, receive personalized recommendations,
-          and access expert agricultural guidance anytime through AI.
+           Empowering farmers through AI-driven crop recommendations,
+           disease detection, weather insights, and multilingual support.
         </p>
 
         <div className="mt-10 flex justify-center gap-4 flex-wrap">
