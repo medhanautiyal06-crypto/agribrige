@@ -1,0 +1,88 @@
+{
+  "collectionName": "AgriBridge API Collection",
+  "requests": [
+    {
+      "name": "Get All Farmers",
+      "method": "GET",
+      "url": "http://localhost:5000/api/farmers",
+      "response": [
+        {
+          "id": 1,
+          "name": "Ramesh",
+          "location": "Uttarakhand",
+          "crop": "Rice"
+        },
+        {
+          "id": 2,
+          "name": "Suresh",
+          "location": "Punjab",
+          "crop": "Wheat"
+        }
+      ]
+    },
+    {
+      "name": "Get Farmer By ID",
+      "method": "GET",
+      "url": "http://localhost:5000/api/farmers/1",
+      "response": {
+        "id": 1,
+        "name": "Ramesh",
+        "location": "Uttarakhand",
+        "crop": "Rice"
+      }
+    },
+    {
+      "name": "Create Farmer",
+      "method": "POST",
+      "url": "http://localhost:5000/api/farmers",
+      "body": {
+        "name": "Rahul",
+        "location": "Delhi",
+        "crop": "Wheat"
+      },
+      "response": {
+        "id": 3,
+        "name": "Rahul",
+        "location": "Delhi",
+        "crop": "Wheat"
+      }
+    },
+    {
+      "name": "Update Farmer",
+      "method": "PUT",
+      "url": "http://localhost:5000/api/farmers/1",
+      "body": {
+        "name": "Mohan",
+        "location": "Haryana",
+        "crop": "Maize"
+      },
+      "response": {
+        "id": 1,
+        "name": "Mohan",
+        "location": "Haryana",
+        "crop": "Maize"
+      }
+    },
+    {
+      "name": "Delete Farmer",
+      "method": "DELETE",
+      "url": "http://localhost:5000/api/farmers/2",
+      "response": {
+        "message": "Farmer deleted successfully"
+      }
+    },
+    {
+      "name": "Search Farmers By Crop",
+      "method": "GET",
+      "url": "http://localhost:5000/api/search?crop=Maize",
+      "response": [
+        {
+          "id": 1,
+          "name": "Mohan",
+          "location": "Haryana",
+          "crop": "Maize"
+        }
+      ]
+    }
+  ]
+}

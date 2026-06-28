@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+import FarmerList from "./components/FarmerList";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -19,6 +19,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        {/* Existing Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -28,8 +29,11 @@ function App() {
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/recommendation" element={<Recommendation />} />
 
-        {/* Week 3 Component Library Demo */}
+        {/* Week 3 Component Demo */}
         <Route path="/components" element={<ComponentDemo />} />
+
+        {/* Week 4 Backend Integration */}
+        <Route path="/farmers" element={<FarmerList />} />
       </Routes>
 
       <Footer />
